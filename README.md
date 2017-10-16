@@ -1,7 +1,7 @@
 # websocketChatRom
 # 安装 #
 ## 进入项目安装express创建web服务 ##
-## 基于websocket.io 安装websocket.io.js##
+## 基于websocket.io 安装websocket.io.js ##
     npm install express -g
 	npm install websocket.io
 # 启动 #
