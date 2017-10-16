@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=0">
+		<title>webScoket聊天室</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<script src="/socket.io/socket.io.js"></script>
+	</head>
+
+	<body>
+		<div id="loginbox" style="display: block;">
+			<div style="width: 260px;margin: 200px auto;">
+				请输入你的聊天室昵称
+				<br />
+				<br />
+				<input type="text" style="width: 180px;" placeholder="请输入用户名" id="username" name="username" />
+				<input type="button" style="width: 50px;" value="提交" onclick="CHAT.usernameSubmit()" />
+			</div>
+		</div>
+		<div id="chatbox" style="display: none;">
+			<!--聊天栏的头部-->
+			<div style="background: #3d3d3d;height: 28px;width: 100%;font-size: 12px;">
+				<div style="line-height: 28px;color: #fff;">
+					<span style="text-align: left;margin-left: 10px;">webSocket聊天室</span>
+					<span style="float: right;margin-right: 10px;">
+						<span id="showusername" style="color: darkcyan;">windsnow</span>
+					<a href="javascript:;" onclick="CHAT.logout()" style="color: #fff;">退出</a>
+					</span>
+				</div>
+			</div>
+			<!--聊天栏的信息输出显示-->
+			<div id="doc">
+				<div id="chat">
+					<div id="message" class="message">
+						<!--在线人数-->
+						<span id="onlinecount" style="font-size: 12px;margin-top:10px;margin-left: 10px;color: #666;"></span>
+						<!--在线用户列表-->
+						<div id="onlineusers" style="font-size:12px;margin-top:10px;margin-left:10px;color:#666;"></div>
+					</div>
+					<div class="input-box">
+						<div class="input" style="width: 85%;float: left;margin-left:10px;">
+							<input type="text" maxlength="140" placeholder="请输入聊天内容" id="content" name="content" />
+						</div>
+						<div class="action" style="width:10%;float: right;">
+							<button id="mjr_send" onclick="CHAT.submit()">提交</button>
+						</div>
+						<div style="font-size: 12px;float: left;position: absolute;width: 100%;top: 45px;left: 10px;">
+							<b>
+								服务器时间：<span id="time"></span>
+							</b>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/client.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

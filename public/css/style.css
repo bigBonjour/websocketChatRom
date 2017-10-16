@@ -1,0 +1,144 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+html {
+	font-size: 20px;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 375px) {
+	#loginbox,
+	#chatbox {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#loginbox,
+	#chatbox {
+		width: 100%;
+	}
+}
+
+#loginbox input {
+	outline: auto;
+}
+
+.input-box {
+	width: 100%;
+	height: 30px;
+	position: fixed;
+	bottom: 40px;
+	left: 0;
+}
+
+.input-box .input input {
+	outline: none;
+	width: 100%;
+	display: block;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #000;
+}
+
+#mjr_send {
+	display: block;
+	outline: none;
+	width: 100%;
+	height: 30px;
+	line-height: 28px;
+	border-bottom: 1px solid cornflowerblue;
+	border-top: 1px solid cornflowerblue;
+	background: #6495ED;
+	border-radius: 0.5rem;
+}
+
+
+/*系统消息*/
+
+.system {
+	overflow: hidden;
+	width: 100%;
+	height: 25px;
+	margin: 10px auto;
+}
+
+.system .msg-system {
+	width: auto;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+	color: #ada7a7;
+	font-size: 0.5rem;
+}
+
+
+/*用户消息*/
+
+#message section.user,
+#message section.service {
+	width: 100%;
+	height: auto;
+	clear: both;
+	margin: 15px auto;
+	overflow: hidden;
+}
+
+#message section.user .name {
+	font-size: 14px;
+	margin-right: 10px;
+	color: #aaa;
+	max-width: 15%;
+	width: auto;
+}
+
+#message section.user .content {
+	max-width: 80%;
+	width: auto;
+	height: auto;
+	color: #000;
+	font-size: 14px;
+	background: #6495ED;
+	padding: 3px;
+	line-height: 20px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+#message section.service .name {
+	font-size: 14px;
+	margin-left: 10px;
+	color: #aaa;
+	max-width: 15%;
+	width: auto;
+}
+
+#message section.service .content {
+	max-width:80%;
+	width: auto;
+	height: auto;
+	margin-left:10px;
+	color: #000;
+	font-size: 14px;
+	background: #e2e0e0;
+	padding: 3px;
+	line-height: 20px;
+	border-radius: 5px;
+}
+
+#message section.user div {
+	float: right;
+}
+
+#message section.service div {
+	float: left;
+}
