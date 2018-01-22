@@ -2,8 +2,8 @@
 # 安装 #
 ## 进入项目安装express创建web服务 ##
 ## 基于websocket.io 安装websocket.io.js ##
-    npm install express -g
-	npm install websocket.io
+    npm install express --save
+	npm install socket.io --save
 # 启动 #
 
 启动入口是server.js
@@ -17,6 +17,7 @@
 使用node的模块
 
     npm install -g localtunnel
+    
 	lt -port 3000
 这是就能得到一个外网地址了
 当服务每次启动时 都要写入`lt -port 3000`来得到新的外网地址

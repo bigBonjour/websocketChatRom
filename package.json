@@ -1,0 +1,28 @@
+{
+  "name": "websocketchatrom",
+  "version": "1.0.0",
+  "description": "node websocket ",
+  "main": "server.js",
+  "scripts": {
+    "test": "start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyf1539558157/websocketChatRom.git"
+  },
+  "keywords": [
+    "websocket",
+    "node"
+  ],
+  "author": "yangyufeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yyf1539558157/websocketChatRom/issues"
+  },
+  "homepage": "https://github.com/yyf1539558157/websocketChatRom#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  }
+}
