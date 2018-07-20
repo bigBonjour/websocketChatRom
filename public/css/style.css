@@ -62,7 +62,6 @@ a {
 	border-radius: 0.5rem;
 }
 
-
 /*系统消息*/
 
 .system {
@@ -80,7 +79,6 @@ a {
 	color: #ada7a7;
 	font-size: 0.5rem;
 }
-
 
 /*用户消息*/
 
@@ -123,10 +121,10 @@ a {
 }
 
 #message section.service .content {
-	max-width:80%;
+	max-width: 80%;
 	width: auto;
 	height: auto;
-	margin-left:10px;
+	margin-left: 10px;
 	color: #000;
 	font-size: 14px;
 	background: #e2e0e0;

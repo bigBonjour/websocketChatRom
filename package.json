@@ -7,9 +7,13 @@
     "test": "start",
     "start": "node server.js"
   },
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.0.4"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yyf1539558157/websocketChatRom.git"
+    "url": "git+https://github.com/bigBonjour/websocketChatRom.git"
   },
   "keywords": [
     "websocket",
@@ -18,11 +22,7 @@
   "author": "yangyufeng",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yyf1539558157/websocketChatRom/issues"
+    "url": "https://github.com/bigBonjour/websocketChatRom/issues"
   },
-  "homepage": "https://github.com/yyf1539558157/websocketChatRom#readme",
-  "dependencies": {
-    "express": "^4.16.2",
-    "socket.io": "^2.0.4"
-  }
+  "homepage": "https://github.com/bigBonjour/websocketChatRom#readme"
 }
