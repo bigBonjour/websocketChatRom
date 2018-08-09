@@ -1,22 +1,22 @@
 //espress node的web框架
 //websocket协议架设 http->socket
-var express = require("express");
-var app = express();
-var http = require("http").Server(app);
-var io = require("socket.io")(http);
-var path = require("path");
+let express = require("express");
+let app = express();
+let http = require("http").Server(app);
+let io = require("socket.io")(http);
+let path = require("path");
 app.use("/", express.static(path.join(__dirname, "public")));
 http.listen(3000, function() {
-	console.log("server running in port 3000");
+	console.log("您的服务运行在：http://127.0.0.1:3000");
 })
-var onlineUsers = {};
-var onlineCount = 0;
+let onlineUsers = {};
+let onlineCount = 0;
 //服务端接受消息
 io.on("connection", function(socket) {
 	//在线成员
 	function getUsersList() {
-		var listUsers = [];
-		for(var i in onlineUsers) {
+		let listUsers = [];
+		for(let i in onlineUsers) {
 			listUsers.push(onlineUsers[i]);
 		}
 		console.log("在线成员");
@@ -51,7 +51,7 @@ io.on("connection", function(socket) {
 	socket.on("disconnect", function() {
 		if(onlineUsers.hasOwnProperty(socket.name)) {
 			//退出用户信息
-			var obj = {
+			let obj = {
 				userid: socket.name,
 				username: onlineUsers[socket.name]
 			}
@@ -69,8 +69,8 @@ io.on("connection", function(socket) {
 	})
 
 	function tick() {
-		var now = new Date();
-		var nowObj = {
+		let now = new Date();
+		let nowObj = {
 			year: now.getFullYear(),
 			month: now.getMonth() + 1,
 			day: now.getDate(),
